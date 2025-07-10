@@ -323,6 +323,14 @@ ${JSON.stringify(zt.instance.options,null,2)}`);default:zt.instance.reset(),zt.i
     box-shadow: 0 4px 16px rgba(180, 180, 180, 0.16);
   }
 `,tD=({index:i=0})=>{const[a,l]=Q.useState(null),r=p=>l(p),c=()=>l(null),h=p=>{p.stopPropagation(),l(y=>y!==null?(y+Ri.length-1)%Ri.length:null)},f=p=>{p.stopPropagation(),l(y=>y!==null?(y+1)%Ri.length:null)};return _.jsxs(ni,{index:i,children:[_.jsxs("div",{style:{textAlign:"center"},children:[_.jsx("div",{style:{fontWeight:600,marginBottom:10,color:"#222"},children:"갤러리"}),_.jsx(KM,{children:Ri.map((p,y)=>_.jsx(QM,{src:p.src,alt:p.alt,onClick:()=>r(y)},p.src))})]}),_.jsx(lv,{children:a!==null&&_.jsx(PM,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},onClick:c,children:_.jsxs(JM,{initial:{scale:.95,opacity:0},animate:{scale:1,opacity:1},exit:{scale:.95,opacity:0},transition:{type:"spring",stiffness:260,damping:22},onClick:p=>p.stopPropagation(),children:[_.jsx(IM,{onClick:c,"aria-label":"닫기",children:_.jsx("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:_.jsx("path",{d:"M4.7 4.7L11.3 11.3M11.3 4.7L4.7 11.3",stroke:"currentColor",strokeWidth:"1.5",strokeLinecap:"round"})})}),Ri.length>1&&_.jsxs(_.Fragment,{children:[_.jsx($M,{onClick:h,"aria-label":"이전",children:_.jsx("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:_.jsx("path",{d:"M10.5 3.5L6 8L10.5 12.5",stroke:"currentColor",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"})})}),_.jsx(WM,{onClick:f,"aria-label":"다음",children:_.jsx("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:_.jsx("path",{d:"M5.5 3.5L10 8L5.5 12.5",stroke:"currentColor",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"})})})]}),_.jsx(Ui.div,{initial:{x:80,opacity:0},animate:{x:0,opacity:1},exit:{x:-80,opacity:0},transition:{type:"spring",stiffness:300,damping:30},style:{display:"flex",alignItems:"center"},children:_.jsx(FM,{src:Ri[a].src,alt:Ri[a].alt})},a)]})})})]},"gallery")},eD=m0`
+  html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
   body {
     background: #fff;
     font-family: 'Noto Sans KR', sans-serif;
